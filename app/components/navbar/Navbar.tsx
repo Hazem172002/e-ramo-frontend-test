@@ -7,6 +7,7 @@ import {Button} from "@/components/ui/button";
 import MobileMenuPanel, {type NavItem} from "./MobileMenuPanel";
 import MobileMenuToggleButton from "./MobileMenuToggleButton";
 import LocaleDropdown from "./LocaleDropdown";
+import Image from "next/image";
 
 const navItems: NavItem[] = [
   {key: "home", href: "/"},
@@ -27,28 +28,26 @@ function Navbar() {
   };
 
   return (
-    <header className="w-full">
-      <nav className="mx-auto flex h-20 w-full  items-center justify-between px-4 md:px-6">
+    <header className="w-full pt-[20px] pb-[27px]">
+      <nav className=" flex  w-full  items-center justify-between px-4 md:px-6">
         <Link href="/" className="shrink-0">
           <div className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-sub-write/40 bg-white">
-              <span className="text-sm font-semibold text-green">DL</span>
-            </div>
+      
             <div className="hidden sm:block">
-              <p className="text-[10px] font-bold tracking-[0.12em] text-write-main">DIAR LOCATION</p>
+            <Image src={'/logoChair.svg'} width={67} height={59} alt="logo" />
             </div>
           </div>
         </Link>
 
-        <ul className="hidden items-center gap-8 lg:flex">
+        <ul className="hidden items-center gap-[48px] xl:flex">
           {navItems.map((item) => {
             const active = isActive(item.href);
             return (
               <li key={item.key}>
                 <Link
                   href={item.href}
-                  className={`text-sm transition-colors ${
-                    active ? "font-semibold text-green" : "text-sub-write hover:text-write-main"
+                  className={`text-[16px] transition-colors ${
+                    active ? " font-extrabold text-green" : "text-sub-write hover:text-write-main"
                   }`}
                 >
                   {t(`links.${item.key}`)}
@@ -58,14 +57,16 @@ function Navbar() {
           })}
         </ul>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-[12px] lg:flex">
           <LocaleDropdown />
-          <Button className="rounded-main bg-green px-5 py-3 text-sm font-semibold text-white hover:bg-green/90">
+          <button className="rounded-[8px] bg-green px-[17px] h-[48px] text-[13px] font-semibold text-white hover:bg-green/90">
             {t("createAccount")}
-          </Button>
-          <Button variant="outline" className="rounded-main border-green/30 bg-white px-5 py-3 text-sm font-semibold text-write-main hover:bg-off-white hover:text-write-main">
+          </button>
+          <button className="rounded-[8px] bg-white border-green border-[1px]  px-[35px] h-[48px] text-[13px] font-semibold text-green flex items-center gap-[2px]">
+            <Image src={'/userIcon.svg'} width={20} height={20} alt="user" />
+
             {t("login")}
-          </Button>
+          </button>
         </div>
 
         <MobileMenuToggleButton isOpen={isOpen} onToggle={() => setIsOpen((prev) => !prev)} />

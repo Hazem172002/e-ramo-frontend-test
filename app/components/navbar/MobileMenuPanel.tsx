@@ -27,7 +27,7 @@ export default function MobileMenuPanel({
   if (!isOpen) return null;
 
   return (
-    <div className="border-t border-black/10 bg-light-gray px-4 py-4 lg:hidden">
+    <div className="border-t mt-1 border-black/10 bg-light-gray px-4 py-4 lg:hidden">
       <ul className="space-y-3">
         {navItems.map((item) => {
           const active = pathname === item.href;

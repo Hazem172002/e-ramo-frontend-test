@@ -12,13 +12,13 @@ export default function LocaleDropdown() {
   const [isLocaleOpen, setIsLocaleOpen] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative xl:me-[16px]">
       <Button
         type="button"
         variant="ghost"
         size="sm"
         onClick={() => setIsLocaleOpen((prev) => !prev)}
-        className="px-0 text-sm font-medium text-write-main hover:bg-transparent hover:text-write-main"
+        className="px-0 text-[18px] font-medium text-write-main hover:bg-transparent hover:text-write-main"
         aria-label={t("toggleLocaleMenu")}
       >
         {locale === "ar" ? t("switchToArabic") : t("switchToEnglish")}
@@ -50,7 +50,7 @@ export default function LocaleDropdown() {
             }`}
           >
             <span className="inline-flex items-center gap-2">
-              <span>English</span>
+              <span className="">English</span>
               <span className="text-xs">🇺🇸</span>
             </span>
           </Link>
