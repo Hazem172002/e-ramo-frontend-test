@@ -49,7 +49,7 @@ export default async function HeroSearchPanel() {
             <input
               type="text"
               placeholder={t("searchPlaceholder")}
-              className="w-full border-none bg-transparent text-sm text-write-main outline-none placeholder:text-sub-write"
+              className="w-full border-none bg-transparent xl:h-[35px] text-sm text-write-main outline-none placeholder:text-sub-write"
             />
           </div>
           <Button

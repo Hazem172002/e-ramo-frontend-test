@@ -30,5 +30,20 @@
       "meetingRooms": "Meeting Rooms",
       "virtualOffices": "Virtual Offices"
     }
+  },
+  "AboutSection": {
+    "title": "About Chair Location",
+    "description": "\"Chair location\" is a website where you can search, find and reserve co-working spaces, including co-working offices, private offices, meeting rooms and virtual offices near you. It shows the features and amenities this space can provide. Professionals and businesses can then compare all available co-working spaces to find one with the services and facilities that best suit their requirements.",
+    "subtitle": "Why Chair Location",
+    "imageAlt": "Modern office environment",
+    "features": {
+      "moreLocations": "More Than (4652) Location",
+      "amenities": "We Offer All Amenities In Our All Location",
+      "support": "All Kinda Of Supports 24/7"
+    },
+    "actions": {
+      "viewProducts": "View Products",
+      "bookNow": "Book Now"
+    }
   }
 }
