@@ -6,6 +6,7 @@ import {notFound} from "next/navigation";
 import type {ReactNode} from "react";
 import {routing} from "@/i18n/routing";
 import "../globals.css";
+import Navbar from "../components/navbar/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,9 +39,13 @@ export default async function LocaleLayout({children, params}: Props) {
 
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body dir={locale === "ar" ? "rtl" : "ltr"} className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider>
-          <div dir={locale === "ar" ? "rtl" : "ltr"}>{children}</div>
+          <div>
+            <Navbar/>
+          {children}
+
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>
