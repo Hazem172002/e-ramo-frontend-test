@@ -104,6 +104,106 @@
       }
     }
   },
+  "HowItWorksSection": {
+    "title": "How It Works",
+    "subtitle": "Coworking & Flexible Office Marketplace | Search & Book Today",
+    "steps": {
+      "one": {
+        "title": "Book, Reach or Call",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "imageAlt": "Step one illustration"
+      },
+      "two": {
+        "title": "View Location Info",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "imageAlt": "Step two illustration"
+      },
+      "three": {
+        "title": "Search Locations",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "imageAlt": "Step three illustration"
+      }
+    }
+  },
+  "HybridWorkingSection": {
+    "title": "Hybrid working can work for you",
+    "description": "Hybrid working offers you the freedom to work closer to clients, colleagues or home. It's also greener and more cost-effective. With over 4,000 locations globally, nobody is better placed than Regus to help you make the best of it.",
+    "images": {
+      "one": {
+        "alt": "Hybrid working office one"
+      },
+      "two": {
+        "alt": "Hybrid working office two"
+      },
+      "three": {
+        "alt": "Hybrid working office three"
+      }
+    }
+  },
+  "PricingSection": {
+    "eyebrow": "Pricing",
+    "title": "Simple, transparent pricing",
+    "description": "This is placeholder text that can be replaced with a short description of available plans and included services.",
+    "billing": {
+      "monthly": "Monthly",
+      "annually": "Annually"
+    },
+    "popular": "Most Popular Plan",
+    "included": "What's included",
+    "perMonth": "/month",
+    "getStarted": "Get Started",
+    "sidebar": {
+      "title": "Choose from the options below.",
+      "options": {
+        "sharedSpace": "Shared Space",
+        "meetingRooms": "Meeting Rooms",
+        "privateOffices": "Private Offices",
+        "virtualOffices": "Virtual Offices"
+      },
+      "helpTitle": "Having any trouble?",
+      "helpDescription": "Reach out anytime from anywhere and our team will be happy to help.",
+      "available": "Available 24/7",
+      "contactUs": "Contact Us"
+    },
+    "plans": {
+      "basic": {
+        "audience": "For individuals",
+        "name": "Basic",
+        "description": "This is placeholder text that can be replaced in the same space to describe the plan.",
+        "price": "SAR99",
+        "features": {
+          "one": "10 hours / week",
+          "two": "25 shared-space hours / month",
+          "three": "1 free hour in a private office",
+          "four": "Up to 3 team members"
+        }
+      },
+      "pro": {
+        "audience": "For growing teams",
+        "name": "Pro",
+        "description": "This is placeholder text that can be replaced in the same space to describe the plan.",
+        "price": "SAR199",
+        "features": {
+          "one": "All analytics features",
+          "two": "Up to 1M tracked visits",
+          "three": "Priority support",
+          "four": "Up to 10 team members"
+        }
+      },
+      "enterprise": {
+        "audience": "For large companies",
+        "name": "Enterprise",
+        "description": "This is placeholder text that can be replaced in the same space to describe the plan.",
+        "price": "SAR399",
+        "features": {
+          "one": "All analytics features",
+          "two": "Up to 5M tracked visits",
+          "three": "Dedicated support",
+          "four": "Up to 50 team members"
+        }
+      }
+    }
+  },
   "Footer": {
     "mainPages": {
       "title": "Main Pages",
@@ -129,6 +229,45 @@
       "privacy": "Privacy & Policy",
       "terms": "Terms & Conditions",
       "copyright": "All Copyrights Chair Location | Developed by e-RAMO For Digital Solutions"
+    }
+  },
+  "NewsLetter": {
+    "title": "Subscribe To Our Newsletter",
+    "description": "Every couple of weeks we send out an update and a few things that have inspired us.",
+    "inputPlaceholder": "Enter your email address",
+    "subscribe": "Subscribe"
+  },
+  "ContactUsSection": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help and answer any question you might have. We look forward to hearing from you.",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Message",
+      "submit": "Send Message",
+      "placeholders": {
+        "firstName": "Enter your first name",
+        "lastName": "Enter your last name",
+        "email": "Enter your email address",
+        "phone": "Enter your phone number",
+        "message": "Write your message here..."
+      }
+    },
+    "details": {
+      "email": {
+        "label": "Email",
+        "value": "info@chairlocation.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+20 123 456 7890"
+      },
+      "address": {
+        "label": "Location",
+        "value": "Cairo, Egypt"
+      }
     }
   }
 }
