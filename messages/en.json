@@ -12,7 +12,8 @@
       "howItWorks": "How It Works",
       "contactUs": "Contact Us",
       "membership": "Membership"
-    }
+    },
+    "toggleLocaleMenu": "Toggle language menu"
   },
   "HomePage": {
     "title": "Hello world"

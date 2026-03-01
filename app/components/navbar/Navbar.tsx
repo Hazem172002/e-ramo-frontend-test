@@ -20,6 +20,7 @@ function Navbar() {
   const pathname = usePathname() ?? "";
   const t = useTranslations("Navbar");
   const [isOpen, setIsOpen] = useState(false);
+  const [isLocaleOpen, setIsLocaleOpen] = useState(false);
 
   const isActive = (href: string) => {
     return pathname === href;
@@ -58,11 +59,43 @@ function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Link href={pathname} locale={locale === "ar" ? "en" : "ar"}>
-            <span className="inline-flex items-center gap-1 text-sm font-medium text-write-main">
-              {locale === "ar" ? t("switchToEnglish") : t("switchToArabic")} <span className="text-xs">🌐</span>
-            </span>
-          </Link>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setIsLocaleOpen((prev) => !prev)}
+              className="inline-flex items-center gap-1 text-sm font-medium text-write-main"
+              aria-label={t("toggleLocaleMenu")}
+            >
+              {locale === "ar" ? t("switchToArabic") : t("switchToEnglish")}
+              <span className="text-xs">🇸🇦</span>
+              <span className={`text-[10px] transition-transform ${isLocaleOpen ? "rotate-180" : ""}`}>▼</span>
+            </button>
+
+            {isLocaleOpen && (
+              <div className="absolute end-0 top-8 z-30 min-w-28 rounded-main border border-sub-write/20 bg-white p-1 shadow-lg">
+                <Link
+                  href={pathname}
+                  locale="ar"
+                  onClick={() => setIsLocaleOpen(false)}
+                  className={`block rounded-main px-3 py-2 text-sm ${
+                    locale === "ar" ? "bg-off-white font-semibold text-green" : "text-write-main hover:bg-off-white"
+                  }`}
+                >
+                  العربية
+                </Link>
+                <Link
+                  href={pathname}
+                  locale="en"
+                  onClick={() => setIsLocaleOpen(false)}
+                  className={`block rounded-main px-3 py-2 text-sm ${
+                    locale === "en" ? "bg-off-white font-semibold text-green" : "text-write-main hover:bg-off-white"
+                  }`}
+                >
+                  English
+                </Link>
+              </div>
+            )}
+          </div>
           <button className="rounded-[8px] bg-green px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90">
             {t("createAccount")}
           </button>

@@ -12,7 +12,8 @@
       "howItWorks": "كيف يعمل",
       "contactUs": "تواصل معنا",
       "membership": "العضوية"
-    }
+    },
+    "toggleLocaleMenu": "تبديل قائمة اللغة"
   },
   "HomePage": {
     "title": "مرحبا بالعالم"
