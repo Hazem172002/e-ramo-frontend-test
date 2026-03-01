@@ -13,6 +13,7 @@
   --color-off-white:#F9F8F6;
   --color-light-gray: #F3F5F6;
   --color-white:#FFFFFF;
+  --radius-main: 12px;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
