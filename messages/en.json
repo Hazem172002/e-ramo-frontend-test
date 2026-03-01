@@ -239,34 +239,21 @@
   },
   "ContactUsSection": {
     "title": "Contact Us",
-    "subtitle": "We're here to help and answer any question you might have. We look forward to hearing from you.",
-    "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "phone": "Phone Number",
-      "message": "Message",
-      "submit": "Send Message",
-      "placeholders": {
-        "firstName": "Enter your first name",
-        "lastName": "Enter your last name",
-        "email": "Enter your email address",
-        "phone": "Enter your phone number",
-        "message": "Write your message here..."
-      }
+    "subtitle": "We Are Here For Your Help",
+    "images": {
+      "leftTopAlt": "Modern office workspace with green wall",
+      "leftBottomAlt": "Coworking workspace interior",
+      "rightAlt": "Colorful office interior"
     },
-    "details": {
-      "email": {
-        "label": "Email",
-        "value": "info@chairlocation.com"
-      },
-      "phone": {
-        "label": "Phone",
-        "value": "+20 123 456 7890"
-      },
-      "address": {
-        "label": "Location",
-        "value": "Cairo, Egypt"
+    "form": {
+      "helperTitle": "Please fill the upcoming fields",
+      "submit": "Send",
+      "placeholders": {
+        "fullName": "Full Name...",
+        "email": "E-mail...",
+        "phone": "Phone Number...",
+        "city": "City...",
+        "message": "Message Text..."
       }
     }
   }

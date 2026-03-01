@@ -12,7 +12,7 @@ export default async function ServicesNavigation() {
   const t = await getTranslations("OurServicesSection");
 
   return (
-    <div className="mx-auto h-[92px] w-full max-w-[620px] rounded-full bg-green p-2">
+    <div className="mx-auto h-[92px] w-full max-w-[748px] rounded-full bg-green p-2">
       <div className="grid h-full grid-cols-2 items-center gap-2 md:grid-cols-4">
         {navItems.map((item) => {
           const isActive = item.key === "sharedSpace";

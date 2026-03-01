@@ -17,7 +17,7 @@ export default async function HomePage() {
       <OurServicesSection />
       <HowItWorks />
       <HybridWorking />
-      <ContactUs />
+      {/* <ContactUs /> */}
       <PricingSection/>
       <NewsLetter />
     </div>

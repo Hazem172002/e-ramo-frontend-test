@@ -20,7 +20,7 @@ export default async function HeroSearchPanel() {
   };
 
   return (
-    <div className="relative z-20 mx-3 -mt-8 rounded-[37px] bg-[#f4f4f3]  shadow-xl md:mx-20 md:-mt-28 pt-[30px]">
+    <div className="relative z-20 mx-auto w-full max-w-[1000px] -mt-8 rounded-[37px] bg-[#f4f4f3] px-3 pt-[30px] shadow-xl md:-mt-28 md:px-0">
       <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 xl:px-[86px] px-[20px]">
         {spaceTypes.map((item) => {
           const isActive = item.key === "meetingRooms";
