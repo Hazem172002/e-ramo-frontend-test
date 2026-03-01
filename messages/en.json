@@ -17,5 +17,18 @@
   },
   "HomePage": {
     "title": "Hello world"
+  },
+  "HeroSection": {
+    "imageAlt": "Modern office workspace",
+    "title": "Office That Fit You Creative Way To Work",
+    "searchPlaceholder": "Search Here...",
+    "searchNearby": "Search Nearby",
+    "search": "Search",
+    "spaces": {
+      "sharedSpace": "Shared Space",
+      "privateOffices": "Private Offices",
+      "meetingRooms": "Meeting Rooms",
+      "virtualOffices": "Virtual Offices"
+    }
   }
 }

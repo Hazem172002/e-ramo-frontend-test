@@ -3,7 +3,6 @@
 import {useTranslations} from "next-intl";
 import {useState} from "react";
 import {Link, usePathname} from "@/i18n/navigation";
-import {Button} from "@/components/ui/button";
 import MobileMenuPanel, {type NavItem} from "./MobileMenuPanel";
 import MobileMenuToggleButton from "./MobileMenuToggleButton";
 import LocaleDropdown from "./LocaleDropdown";

@@ -1,12 +1,7 @@
-'use client';
+import HeroSection from "../components/hero/HeroSection";
 
-import {useTranslations} from "next-intl";
-
-export default function HomePage() {
-  const t = useTranslations("HomePage");
-
+export default async function HomePage() {
   return (
-      <h1 className="text-4xl font-bold text-write-main">{t("title")}</h1>
+    <HeroSection />
   );
 }
-

@@ -17,5 +17,18 @@
   },
   "HomePage": {
     "title": "مرحبا بالعالم"
+  },
+  "HeroSection": {
+    "imageAlt": "مساحة عمل مكتبية حديثة",
+    "title": "مكتب يناسبك بطريقة إبداعية للعمل",
+    "searchPlaceholder": "ابحث هنا...",
+    "searchNearby": "ابحث بالقرب مني",
+    "search": "بحث",
+    "spaces": {
+      "sharedSpace": "مساحة مشتركة",
+      "privateOffices": "مكاتب خاصة",
+      "meetingRooms": "غرف اجتماعات",
+      "virtualOffices": "مكاتب افتراضية"
+    }
   }
 }
