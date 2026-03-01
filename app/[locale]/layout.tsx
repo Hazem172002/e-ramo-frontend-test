@@ -1,12 +1,13 @@
-import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
-import {NextIntlClientProvider, hasLocale} from "next-intl";
-import {setRequestLocale} from "next-intl/server";
-import {notFound} from "next/navigation";
-import type {ReactNode} from "react";
-import {routing} from "@/i18n/routing";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
+import type { ReactNode } from "react";
+import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,11 +26,11 @@ export const metadata: Metadata = {
 
 type Props = {
   children: ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 };
 
-export default async function LocaleLayout({children, params}: Props) {
-  const {locale} = await params;
+export default async function LocaleLayout({ children, params }: Props) {
+  const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
@@ -39,13 +40,14 @@ export default async function LocaleLayout({children, params}: Props) {
 
   return (
     <html lang={locale}>
-      <body dir={locale === "ar" ? "rtl" : "ltr"} className={`${geistSans.variable} ${geistMono.variable} antialiased xl:mx-[65px] mx-[20px]`}>
+      <body dir={locale === "ar" ? "rtl" : "ltr"} className={`${geistSans.variable} ${geistMono.variable} antialiased `}>
         <NextIntlClientProvider>
-          <div>
-            <Navbar/>
-          {children}
-
+          <div className="xl:mx-[65px] mx-[20px]">
+            <Navbar />
+            {children}
           </div>
+          <Footer />
+
         </NextIntlClientProvider>
       </body>
     </html>

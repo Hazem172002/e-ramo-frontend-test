@@ -77,5 +77,58 @@
         "category": "Meeting Room"
       }
     }
+  },
+  "OurServicesSection": {
+    "nav": {
+      "sharedSpace": "Shared Space",
+      "privateOffices": "Private Offices",
+      "meetingRooms": "Meeting Rooms",
+      "virtualOffices": "Virtual Offices"
+    },
+    "selected": {
+      "title": "Shared Space",
+      "subtitle": "(CO Work Space)",
+      "description": "Rent as many desks as you need in a dynamic, shared office space. Business Address and storage options included.",
+      "bullets": {
+        "one": "Reserved permanent workspace as long as you need",
+        "two": "Book a desk by the hour or day in anyplace",
+        "three": "A well-prepared place for your service and comfort",
+        "four": "Hot desk as often as you need in any place"
+      },
+      "priceLabel": "Price Starting From:",
+      "priceValue": "1250 EGP",
+      "imageAlt": "Shared workspace office",
+      "actions": {
+        "bookNow": "Book Now",
+        "learnMore": "Learn More"
+      }
+    }
+  },
+  "Footer": {
+    "mainPages": {
+      "title": "Main Pages",
+      "home": "Home",
+      "about": "About",
+      "howItWorks": "How It Works",
+      "contactUs": "Contact Us",
+      "membership": "Membership"
+    },
+    "products": {
+      "title": "Products",
+      "sharedSpace": "Shared Space",
+      "privateOffices": "Private Offices",
+      "meetingRooms": "Meeting Rooms",
+      "virtualOffices": "Virtual Offices"
+    },
+    "downloadApp": {
+      "title": "Download the Chair Location App",
+      "googlePlay": "Get it on Google Play",
+      "appStore": "Download on the App Store"
+    },
+    "bottom": {
+      "privacy": "Privacy & Policy",
+      "terms": "Terms & Conditions",
+      "copyright": "All Copyrights Chair Location | Developed by e-RAMO For Digital Solutions"
+    }
   }
 }

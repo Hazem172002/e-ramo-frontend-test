@@ -77,5 +77,58 @@
         "category": "غرفة اجتماعات"
       }
     }
+  },
+  "OurServicesSection": {
+    "nav": {
+      "sharedSpace": "مساحة مشتركة",
+      "privateOffices": "مكاتب خاصة",
+      "meetingRooms": "غرف اجتماعات",
+      "virtualOffices": "مكاتب افتراضية"
+    },
+    "selected": {
+      "title": "مساحة مشتركة",
+      "subtitle": "(مساحة عمل مشتركة)",
+      "description": "استأجر عدد المكاتب الذي تحتاجه في مساحة عمل مشتركة مرنة. يشمل ذلك عنوانًا تجاريًا وخيارات تخزين.",
+      "bullets": {
+        "one": "مساحة عمل دائمة محجوزة طالما احتجت إليها",
+        "two": "احجز مكتبًا بالساعة أو باليوم في أي مكان",
+        "three": "مكان مجهز جيدًا لخدمتك وراحتك",
+        "four": "مكتب مرن متاح كلما احتجت وفي أي مكان"
+      },
+      "priceLabel": "السعر يبدأ من:",
+      "priceValue": "1250 EGP",
+      "imageAlt": "مساحة مكتبية مشتركة",
+      "actions": {
+        "bookNow": "احجز الآن",
+        "learnMore": "اعرف المزيد"
+      }
+    }
+  },
+  "Footer": {
+    "mainPages": {
+      "title": "الصفحات الرئيسية",
+      "home": "الرئيسية",
+      "about": "من نحن",
+      "howItWorks": "كيف يعمل",
+      "contactUs": "تواصل معنا",
+      "membership": "العضوية"
+    },
+    "products": {
+      "title": "المنتجات",
+      "sharedSpace": "مساحة مشتركة",
+      "privateOffices": "مكاتب خاصة",
+      "meetingRooms": "غرف اجتماعات",
+      "virtualOffices": "مكاتب افتراضية"
+    },
+    "downloadApp": {
+      "title": "تحميل تطبيق Chair Location",
+      "googlePlay": "احصل عليه من Google Play",
+      "appStore": "حمل من App Store"
+    },
+    "bottom": {
+      "privacy": "سياسة الخصوصية",
+      "terms": "الشروط والأحكام",
+      "copyright": "جميع الحقوق محفوظة Chair Location | تم التطوير بواسطة e-RAMO لليطبيقات الرقمية"
+    }
   }
 }
