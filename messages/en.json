@@ -45,5 +45,37 @@
       "viewProducts": "View Products",
       "bookNow": "Book Now"
     }
+  },
+  "ListingSection": {
+    "title": "Latest Listings",
+    "subtitle": "Check our latest listings",
+    "imageAlt": "Listing office image",
+    "cardTitle": "Spot Co-Working Space",
+    "description": "Chair location is a website where you can search, find and reserve co-working space, including co-working",
+    "rating": "4.9 (162 Review)",
+    "pricePer": "12 Per",
+    "startsFrom": "Starts From :",
+    "availability": {
+      "available": "Available",
+      "notAvailable": "Not Available"
+    },
+    "status": {
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "cards": {
+      "one": {
+        "category": "Shared Area"
+      },
+      "two": {
+        "category": "Meeting Room"
+      },
+      "three": {
+        "category": "Private Office"
+      },
+      "four": {
+        "category": "Meeting Room"
+      }
+    }
   }
 }

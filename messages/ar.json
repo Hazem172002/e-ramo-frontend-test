@@ -45,5 +45,37 @@
       "viewProducts": "عرض المنتجات",
       "bookNow": "احجز الآن"
     }
+  },
+  "ListingSection": {
+    "title": "أحدث القوائم",
+    "subtitle": "تصفح أحدث القوائم لدينا",
+    "imageAlt": "صورة مكتب للإعلان",
+    "cardTitle": "مساحة عمل مشتركة مميزة",
+    "description": "Chair location هو موقع يمكنك من خلاله البحث والعثور وحجز مساحات العمل المشتركة بما فيها المكاتب المشتركة",
+    "rating": "4.9 (162 مراجعة)",
+    "pricePer": "12 لكل",
+    "startsFrom": "تبدأ من :",
+    "availability": {
+      "available": "متاح",
+      "notAvailable": "غير متاح"
+    },
+    "status": {
+      "open": "مفتوح",
+      "closed": "مغلق"
+    },
+    "cards": {
+      "one": {
+        "category": "منطقة مشتركة"
+      },
+      "two": {
+        "category": "غرفة اجتماعات"
+      },
+      "three": {
+        "category": "مكتب خاص"
+      },
+      "four": {
+        "category": "غرفة اجتماعات"
+      }
+    }
   }
 }
