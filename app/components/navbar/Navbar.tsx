@@ -3,6 +3,7 @@
 import {useLocale, useTranslations} from "next-intl";
 import {useState} from "react";
 import {Link, usePathname} from "@/i18n/navigation";
+import {Button} from "@/components/ui/button";
 import MobileMenuPanel, {type NavItem} from "./MobileMenuPanel";
 import MobileMenuToggleButton from "./MobileMenuToggleButton";
 
@@ -60,16 +61,18 @@ function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <div className="relative">
-            <button
+            <Button
               type="button"
+              variant="ghost"
+              size="sm"
               onClick={() => setIsLocaleOpen((prev) => !prev)}
-              className="inline-flex items-center gap-1 text-sm font-medium text-write-main"
+              className="px-0 text-sm font-medium text-write-main hover:bg-transparent hover:text-write-main"
               aria-label={t("toggleLocaleMenu")}
             >
               {locale === "ar" ? t("switchToArabic") : t("switchToEnglish")}
-              <span className="text-xs">🇸🇦</span>
+              <span className="text-xs">{locale === "ar" ? "🇸🇦" : "🇺🇸"}</span>
               <span className={`text-[10px] transition-transform ${isLocaleOpen ? "rotate-180" : ""}`}>▼</span>
-            </button>
+            </Button>
 
             {isLocaleOpen && (
               <div className="absolute end-0 top-8 z-30 min-w-28 rounded-main border border-sub-write/20 bg-white p-1 shadow-lg">
@@ -81,7 +84,10 @@ function Navbar() {
                     locale === "ar" ? "bg-off-white font-semibold text-green" : "text-write-main hover:bg-off-white"
                   }`}
                 >
-                  العربية
+                  <span className="inline-flex items-center gap-2">
+                    <span>العربية</span>
+                    <span className="text-xs">🇸🇦</span>
+                  </span>
                 </Link>
                 <Link
                   href={pathname}
@@ -91,17 +97,20 @@ function Navbar() {
                     locale === "en" ? "bg-off-white font-semibold text-green" : "text-write-main hover:bg-off-white"
                   }`}
                 >
-                  English
+                  <span className="inline-flex items-center gap-2">
+                    <span>English</span>
+                    <span className="text-xs">🇺🇸</span>
+                  </span>
                 </Link>
               </div>
             )}
           </div>
-          <button className="rounded-[8px] bg-green px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90">
+          <Button className="rounded-main bg-green px-5 py-3 text-sm font-semibold text-white hover:bg-green/90">
             {t("createAccount")}
-          </button>
-          <button className="rounded-[8px] border border-green/30 bg-white px-5 py-3 text-sm font-semibold text-write-main transition-colors hover:bg-off-white">
+          </Button>
+          <Button variant="outline" className="rounded-main border-green/30 bg-white px-5 py-3 text-sm font-semibold text-write-main hover:bg-off-white hover:text-write-main">
             {t("login")}
-          </button>
+          </Button>
         </div>
 
         <MobileMenuToggleButton isOpen={isOpen} onToggle={() => setIsOpen((prev) => !prev)} />

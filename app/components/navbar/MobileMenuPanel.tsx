@@ -2,6 +2,7 @@
 
 import {useTranslations} from "next-intl";
 import {Link} from "@/i18n/navigation";
+import {Button} from "@/components/ui/button";
 
 export type NavItem = {
   key: string;
@@ -46,10 +47,10 @@ export default function MobileMenuPanel({
       </ul>
 
       <div className="mt-4 flex flex-col gap-2">
-        <button className="rounded-md bg-green px-5 py-3 text-sm font-semibold text-white">{t("createAccount")}</button>
-        <button className="rounded-md border border-green/30 bg-white px-5 py-3 text-sm font-semibold text-write-main">
+        <Button className="rounded-main bg-green text-white hover:bg-green/90">{t("createAccount")}</Button>
+        <Button variant="outline" className="rounded-main border-green/30 bg-white text-write-main hover:bg-off-white hover:text-write-main">
           {t("login")}
-        </button>
+        </Button>
       </div>
     </div>
   );
