@@ -39,7 +39,7 @@ export default async function LocaleLayout({children, params}: Props) {
 
   return (
     <html lang={locale}>
-      <body dir={locale === "ar" ? "rtl" : "ltr"} className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body dir={locale === "ar" ? "rtl" : "ltr"} className={`${geistSans.variable} ${geistMono.variable} antialiased xl:mx-[65px] mx-[20px]`}>
         <NextIntlClientProvider>
           <div>
             <Navbar/>

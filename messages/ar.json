@@ -1,6 +1,20 @@
 {
+  "Navbar": {
+    "toggleMenu": "تبديل قائمة التنقل",
+    "switchToArabic": "العربية",
+    "switchToEnglish": "English",
+    "createAccount": "إنشاء حساب",
+    "login": "تسجيل الدخول",
+    "links": {
+      "home": "الرئيسية",
+      "about": "من نحن",
+      "products": "المنتجات",
+      "howItWorks": "كيف يعمل",
+      "contactUs": "تواصل معنا",
+      "membership": "العضوية"
+    }
+  },
   "HomePage": {
     "title": "مرحبا بالعالم"
   }
 }
-

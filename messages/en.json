@@ -1,6 +1,20 @@
 {
+  "Navbar": {
+    "toggleMenu": "Toggle navigation menu",
+    "switchToArabic": "العربية",
+    "switchToEnglish": "English",
+    "createAccount": "Create Account",
+    "login": "Login",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "products": "Products",
+      "howItWorks": "How It Works",
+      "contactUs": "Contact Us",
+      "membership": "Membership"
+    }
+  },
   "HomePage": {
     "title": "Hello world"
   }
 }
-
